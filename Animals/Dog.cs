@@ -1,9 +1,7 @@
-using System;
-
 namespace Animals
 {
-    class Dog: Animal
+    public class Dog: Animal
     {
-        
+     
     }
 }

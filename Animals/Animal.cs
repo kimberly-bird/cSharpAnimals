@@ -1,24 +1,22 @@
-using System;
-
 namespace Animals
 {
-    class Animal
+    public class Animal
     {
         // Animal Class Properties
         private string _name;
         private string _species;
 
         // Animal Class Accessor Method
-        public string Name { get { return _name;} set; }
-        public string Species { get { return _species;} set; }
+        public string Name { get { return _name; }}
+        public string Species { get { return _species; }}
 
         // Set Animal Name Method
-        public void SetAnimalName(string name)
+        public void SetName(string name)
         {
             _name = name;
         }
         // Set Animal Species Method
-        public void SetAnimalSpecies(string species)
+        public void SetSpecies(string species)
         {
             _species = species;
         }
