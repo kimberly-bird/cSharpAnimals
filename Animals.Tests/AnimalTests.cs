@@ -1,14 +1,15 @@
 using System;
 using Xunit;
+using Animals;
 
 namespace Animals.Tests
 {
-    public class AnimalsShould
+    public class AnimalShould
     {
         private Animal _animal;
         private Dog _dog;
 
-        public AnimalsShould()
+        public AnimalShould()
         {
             // new instance of animal
             _animal = new Animal();
@@ -18,6 +19,7 @@ namespace Animals.Tests
         [Fact]
         public void SetName()
         {
+            
             _dog.SetName("dog");
 
             Assert.Equal("dog", _dog.Name);
