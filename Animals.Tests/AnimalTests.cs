@@ -8,7 +8,7 @@ namespace Animals.Tests
         private Animal _animal;
         private Dog _dog;
 
-        public void AnimalShould()
+        public AnimalsShould()
         {
             // new instance of animal
             _animal = new Animal();
@@ -18,9 +18,9 @@ namespace Animals.Tests
         [Fact]
         public void SetName()
         {
-            _dog.SetSpecies("dog");
+            _dog.SetName("dog");
 
-            Assert.Equal(_dog.Name, "dog");
+            Assert.Equal("dog", _dog.Name);
         }
 
         [Fact]
@@ -28,7 +28,7 @@ namespace Animals.Tests
         {
             _dog.SetSpecies("Schnauzer");
 
-            Assert.Equal(_dog.Species, "Schnauzer");
+            Assert.Equal("Schnauzer", _dog.Species);
         }
     }
     

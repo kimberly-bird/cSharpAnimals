@@ -7,8 +7,8 @@ namespace Animals
         private string _species;
 
         // Animal Class Accessor Method
-        public string Name { get { return _name; }}
-        public string Species { get { return _species; }}
+        public string Name { get; set; }
+        public string Species { get; set; }
 
         // Set Animal Name Method
         public void SetName(string name)
